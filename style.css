@@ -1,0 +1,1168 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@300&family=Inter:wght@300&family=Josefin+Sans:wght@300&family=Oxanium&family=Syne:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oxanium', sans-serif;
+    background-color: #0d0d2b; 
+}
+
+h1{
+    color: #ffff;
+}
+
+p{
+    color: #D1D5DB
+}
+
+.container{
+    padding: 1em 1.4em;
+}
+
+.desktop{
+    display: none;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+  nav label.btn{
+   color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  nav label.cancel{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+  #check{
+    display: none;
+  }
+    .menu ul{
+      display: block;
+      list-style: none;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      padding-top: 45px;
+      height: 100%;
+      background: #252540;
+      z-index: 12;
+      transition: all 0.3s ease;
+    }
+
+    .menu ul a{
+     display: block;
+     font-size: 24px;
+     width: 100%;
+     color: #ffffff;
+     text-decoration: none;
+     margin-top: 30px;
+     box-shadow: none;
+     text-align: center;
+    }
+    .menu ul a:hover:before{
+      box-shadow: none;
+    }
+    nav label.bars{
+      display: block;
+    }
+    #check:checked ~ label.bars{
+      display: none;
+    }
+    #check:checked ~ ul label.cancel{
+      display: block;
+    }
+    #check:checked ~ ul{
+      right: 0;
+    }
+
+    .btn{
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        /* align-items: center */
+        gap: 1.5em;
+    }
+    
+    .login{
+        margin-left: 1em;
+        margin-top: .3em;
+    }
+    
+    .menu ul span{
+        border-right: 2px solid #FFFFFF33;
+        height: 30px;
+        margin-top: 35px;
+    }
+    
+    .register-btn{
+        background-color: #3b82f6;
+        padding: .3em .5em;
+        border-radius: 2em;  
+    }
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6em;
+    margin-bottom: 7em;
+}
+
+.hero-img img{
+   width: 100%;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4em;
+}
+
+.hero-content .hero-btn{
+    background-color: #4b5563;
+    width: 280px;
+    padding: .7em 1em;
+    border-radius: 2em;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.hero-btn span{
+    background-color: #ffffff;
+    padding: .4em 1em;
+    border-radius: 2em;
+    margin-right: 1.5em;
+    margin-left: -.6em;
+    color: #9CA3AF;
+}
+
+.hero h1{
+    font-size: 36px;
+    line-height: 1em;
+}
+
+.hero .buy-sell{
+    font-size: .75rem;
+    margin-top: -2em;
+}
+
+.try-for-free{
+    text-decoration: none;
+    background-color: #2563eb;
+    padding: .7em;
+    font-size: 16px;
+    border-radius: 2em;
+    color: #ffffff;
+    width: 175px;
+    margin-top: -.8em;
+}
+
+.try-for-free span{
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: .5em;
+    color: #2563eb;
+    margin-left: 1em;
+}
+
+.try-for-free span svg{
+    margin-bottom: -.122em;
+}
+
+.milestone{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 3em;
+}
+
+.milestone-flex{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.last h1, .last p{
+   margin-right: 2em;
+}
+
+.milestone-flex svg{
+  background-color: #4b5563;
+  border-radius: 50%;
+  padding: 1.4em;
+  width: 70px;
+  height: 70px;
+}
+
+.milestone-content h1{
+    font-size: 24px;
+    margin-bottom: .2em;
+}
+
+.milestone-content p{
+    font-size: 12px;
+    color: #9CA3AF;
+}
+
+.why{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.why img{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.why-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.why-content h1{
+    font-size: 36px;
+    line-height: 1em; 
+}
+
+.why-content p{
+    font-size: 1rem;
+    color: #9CA3AF;
+}
+
+.why-content a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3b82f6;
+    font-size: 16px;
+    width: 114px;
+    padding: .6em 1em;
+    border-radius: 2em; 
+}
+
+.rate{
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    width: 95%;
+}
+
+.rate-heading{
+    text-align: center;
+}
+
+.rate-heading h2{
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: .6em;
+}
+
+.rate-heading p{
+    color: #9CA3AF;
+    font-size: 12px;
+    margin-bottom: 2.8em;
+}
+
+.rate-card{
+    background-color: #fff;
+    text-align: left;
+    padding: 2em 1em;
+    border-radius: 15px;
+}
+
+.form-data{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    margin-bottom: 2.5em;
+}
+
+.form-data input{
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    font-size: 18px;
+    color: #0d0d2b;
+    outline: none;
+}
+
+.form-data select{
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    color: #0d0d2b;
+    font-size: 18px;
+    outline: none;
+}
+
+.form-data a{
+    text-decoration: none;
+    background-color: #3b71e9;
+    padding: .6em 2em;
+    border-radius: 2em;
+    width: 150px;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: -.8em;
+}
+
+.form-data input::placeholder{
+    color: #0d0d2b;
+    font-size: 18px;
+}
+
+.rate-below{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.rate-below h3{
+    font-size: 16px;
+    color: #3671E9;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.rate-below .eth{
+    font-size: 32px;
+    color: #0d0d2b;
+    font-weight: 600;
+}
+
+.rate-below .eth span{
+    color: #3671E9;
+}
+
+.rate-below .revenue{
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.middle{
+    background-color:#f6f7f9;
+}
+
+.trade{
+    border: 1px solid #f6f7f9;
+    margin: 1em auto;
+    margin-top: -5em;
+}
+
+.trade .trade-heading{
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+.trade-cards{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.trade-card{
+    width: 95%;
+    margin: 0 auto;
+    padding: 3.8em 2em;
+    background-color: #fff;
+    border-radius: 1em;
+}
+
+.trade-card img{
+    margin-top: -1em;
+    margin-bottom: 3em;
+}
+
+.trade-card h3{
+    margin-bottom: .7em;
+    color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.trade-card h3 span{
+    color: #9CA3AF;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.trade-card p{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 3em;
+}
+
+.trade-card a{
+   border: 1px solid #afb0b3;
+   padding: 1.6em 1.3em;
+   border-radius: 50%;
+}
+
+.trade-card a svg{
+    color: #3671e9;
+    font-size: 1.8em;
+    margin-bottom: -.32em;
+}
+
+.trade .one, .trade .two, .trade .three{
+    margin-bottom: 2em;
+}
+
+.market .market-title{
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: .83em;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.invest{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 6em;
+}
+
+.invest-content, .details-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.invest-content h1, .details-content h1{
+    font-size: 24px;
+}
+
+.invest-content p, .details-content p, .profit-content p{
+    font-size: 12px;
+    color: #9CA3AF;
+}
+
+.invest-content a, .details-content a, .profit-content a{
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #3b82f6;
+    padding: 1em 1.5em;
+    border-radius: 4em;
+    width: 105px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.details img{
+   width: 100%;
+}
+
+.profit{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 9em;
+}
+
+.profit-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 4em;
+}
+
+.profit-content h1{
+    font-size: 24px;
+}
+
+.profit img{
+    width: 100%;
+}
+
+.newsletter{
+    padding: 8em 1em;
+    background-image: url(./images/newsletter-box.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 6em;
+    height: 280px;
+    border-radius: 0.375rem;;
+}
+
+.newsletter-flex{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: -3em;
+}
+
+.newsletter-text{
+    margin-top: -2.7em;
+}
+
+.newsletter-text h1{
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.newsletter-text p{
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+.newsletter-form input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    /* margin-right: 1.5em; */
+}
+
+.newsletter-form input::placeholder{
+   color: #ffffff; 
+   position: relative;
+   top: -.1em
+}
+
+.newsletter-form a{
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 1em;
+    width: 100px;
+    margin: auto;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+    align-items: center;
+    margin-top: -2em;
+    gap: 3em
+}
+
+.footer-logo img{
+    margin-top: -.5em;
+}
+
+.quick-links h1, .resource-links h1{
+ font-size: 20px;
+ margin-bottom: 1em;
+ margin-left: 2em;
+}
+
+.quick-links ul, .resource-links ul{
+list-style-type: none;
+}
+
+.quick-links ul li, .resource-links ul li{
+   padding: .7em 0;
+   text-align: center;
+}
+
+.quick-links ul li a, .resource-links ul li a{
+    color:#e0e0e0;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.payment-method{
+    margin-top: .2em;
+}
+
+ .payment-method h3{
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 2.5em;
+    text-align: center;
+}
+
+.payment-img{
+    display: flex;
+    gap: 1.5em;
+}
+
+.rights{
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.rights p{
+    margin: auto;
+}
+
+.socials a{
+  padding: 0 .8em;
+}
+
+.socials a svg{
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+@media(min-width: 1024px){
+    .container{
+        max-width: 1200px;
+        margin: 1em auto;
+        padding: 0;
+    }
+    
+    .main{
+     display: flex;
+     flex-direction: column;
+     /* gap: 2em; */
+    }
+
+    #check:checked ~ ul{
+       display: none;
+      }
+
+    nav label.btn,  nav label.cancel{
+         display: none;
+       }
+       
+       .menu img{
+        display: none;
+       }
+
+    .desktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -2em;
+    }
+    
+    .desktop ul{
+        display: flex;
+        gap: 2em;
+        list-style-type: none;
+    }
+    
+    .desktop ul li a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+    ul li .link-item:hover{
+        border-bottom: 1px solid #2563eb;
+        padding: .3em 0;
+    }
+    
+    .btn{
+        display: flex;
+        gap: 1em;
+    }
+    
+    .login{
+        margin-left: 1em;
+        margin-top: -.09em;
+    }
+    
+    .desktop ul span{
+        border-right: 2px solid #FFFFFF33;
+    }
+    
+    .register-btn{
+        background-color: #3b82f6;
+        padding: .6em 1em;
+        border-radius: 2em; 
+        margin-top: -.5em;  
+    }
+    
+    .hero{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6em;
+        margin-bottom: 5em;
+    }
+    
+    .hero-img img{
+        width: 80%;
+    }
+    
+    .hero h1{
+        font-size: 3rem;
+        width: 500px;
+        line-height: 1em;
+    }
+    
+    .milestone{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .milestone-flex{
+        display: flex;
+        gap: 1.5em;
+        margin: 0;
+    }
+    
+    .milestone-flex svg{
+      background-color: #4b5563;
+      padding: .5em;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+    }
+    
+    .milestone-content h1{
+        font-size: 24px;
+        margin-bottom: .2em;
+    }
+    
+    .milestone-content p{
+        font-size: 12px;
+        color: #9CA3AF;
+    }
+    
+    .why{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1.8em;
+        margin-bottom: 4em;
+    }
+    
+    .why img{
+        width: 100%;
+    }
+    
+    .why-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    
+    .why-content h1{
+        font-size: 3rem;
+        width: 600px;
+        line-height: 1em; 
+    }
+    
+    .rate{
+        width: 900px;
+        margin: 0 auto;
+        z-index: 2;
+        position: relative;
+    }
+    
+    .rate-heading{
+        text-align: center;
+    }
+    
+    .rate-heading h2{
+        color: #ffffff;
+        font-size: 24px;
+        margin-bottom: .6em;
+    }
+    
+    .rate-heading p{
+        color: #9CA3AF;
+        font-size: 12px;
+        margin-bottom: 2.8em;
+    }
+    
+    .rate-card{
+        background-color: #fff;
+        text-align: left;
+        padding: 3em 3em;
+        border-radius: 15px;
+    }
+    
+    .form-data{
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+        padding-top: 2em;
+        margin-bottom: 2.5em;
+    }
+    
+    .form-data input{
+        width: 450px;
+    }
+    
+    .form-data select{
+        width: 200px;
+    }
+    
+    .rate-below{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    } 
+    
+    .trade{
+        max-width: 1120px;
+        width: 100%;
+        margin: 1em auto;
+        margin-top: -7em;
+    }
+    
+    .trade .trade-heading{
+        color: #000000;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 9em;
+        margin-bottom: 3em;
+    }
+    
+    .trade-cards{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 2.5em;
+    }
+    
+    .trade-card{
+        width: 370px;
+        padding: 3.8em 2em;
+        background-color: #fff;
+        border-radius: 1em;
+    }
+    
+    .trade-card img{
+        margin-top: -1em;
+        margin-bottom: 3em;
+    }
+    
+    .trade-card h3{
+        margin-bottom: .7em;
+        color: #000000;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    .trade-card h3 span{
+        color: #9CA3AF;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    .trade-card p{
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: 3em;
+    }
+    
+    .trade-card a{
+       border: 1px solid #afb0b3;
+       padding: 1.6em 1.3em;
+       border-radius: 50%;
+    }
+    
+    .trade-card a svg{
+        color: #3671e9;
+        font-size: 1.8em;
+        margin-bottom: -.32em;
+    }
+    
+    .trade .one, .trade .two, .trade .three{
+        margin-bottom: 2em;
+    }
+    
+    .market .market-title{
+        font-size: 30px;
+        color: #ffffff;
+        margin-top: .83em;
+        margin-bottom: 3em;
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .invest{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        margin-bottom: 6em;
+    }
+    
+    .invest-content, .details-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    
+    .invest-content h1, .details-content h1{
+        font-size: 24px;
+    }
+    
+    .invest-content p, .details-content p, .profit-content p{
+        font-size: 12px;
+        color: #9CA3AF;
+        width: 500px;
+    }
+    
+    .invest-content a, .details-content a, .profit-content a{
+        color: #ffffff;
+        font-size: 12px;
+        text-decoration: none;
+        background-color: #3b82f6;
+        padding: 1em 1.5em;
+        border-radius: 4em;
+        width: 105px;
+    }
+    
+    .details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3em;
+        margin-bottom: 6em;
+    }
+    
+    .details img{
+       width: 660px;
+    }
+    
+    .profit{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 9em;
+    }
+    
+    .profit-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        margin-top: 4em;
+    }
+    
+    .profit-content h1{
+        font-size: 24px;
+        width: 400px;
+    }
+    
+    .profit img{
+        width: 650px;
+    }
+    
+    .newsletter{
+        padding: 9em 3em;
+        background-image: url(./images/newsletter-box.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 6em;
+    }
+    
+    .newsletter-flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .newsletter-text{
+        margin-top: -2.7em;
+    }
+    
+    .newsletter-text h1{
+        font-size: 24px;
+        margin-bottom: 1em;
+    }
+    
+    .newsletter-text p{
+        font-size: 12px;
+        width: 400px;
+    }
+
+    .newsletter-form{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .newsletter-form input[type="text"]{
+        width: 450px;
+        height: 40px;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        align-items: flex-start;
+    }
+    
+    .footer-logo img{
+        margin-top: -.5em;
+    }
+    
+    .quick-links h1, .resource-links h1{
+     font-size: 20px;
+     margin-bottom: 1em;
+    }
+    
+    .quick-links ul, .resource-links ul{
+    list-style-type: none;
+    }
+    
+    .quick-links ul li, .resource-links ul li{
+       padding: .7em 2.7em;
+       text-align: left;
+    }
+    
+    .quick-links ul li a, .resource-links ul li a{
+        color:#e0e0e0;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .quick-links ul li a:hover, .resource-links ul li a:hover{
+        color:#2563eb;
+    }
+    
+    .payment-method{
+        margin-top: .2em;
+    }
+    
+     .payment-method h3{
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 2.5em;
+        text-align: left;
+    }
+    
+    .payment-img{
+        display: flex;
+        gap: 1.5em;
+    }
+    
+    .rights{
+        margin-bottom: 2em;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rights p{
+        margin: 0;
+    }
+    
+    .socials a{
+      padding: 0 .8em;
+    }
+    
+    .socials a svg{
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+
+    .socials a svg:hover{
+        color: #2563eb;
+    }
+}
+
+@media(min-width: 1024px) and (max-width:1194px) {
+    .rate{
+        width: 90%;
+    }
+    
+    .invest img, .details img{
+        width: 45%;
+    }
+    
+    .profit img{
+        width: 45%;
+    }
+    
+    .newsletter-flex{
+        margin-left: -2em;
+    }
+    
+    .newsletter-form input[type="text"]{
+      width: 350px;
+    }
+
+    .footer{
+        margin-top: -5em;
+    }
+}
+
+@media(min-width: 768px) and (max-width:1022px){
+   .hero-content{
+    margin-left: 6em;
+   }
+
+   .why-content{
+    margin-left: 3em;
+   }
+
+   .invest-content p, .details-content p, .profit-content p{
+    width: 500px;
+}
+
+   .invest img{
+    width: 83%;
+   }
+
+   .details-content{
+    margin-left: 7em;
+   }
+
+   .profit-content{
+    margin-left: 6em;
+   }
+
+   .profit-content h1{
+    width: 400px;
+   }
+
+.profit img{
+    width: 700px;
+}
+
+.newsletter p{
+    width: 400px;
+}
+
+
+    
